@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    background-color: #79FA79;
+    align-items: center;
+    justify-content: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border: 3px solid #005832;
+    height: max-content;
+    width: max-content;
+    box-shadow: 0 0 0 7px #003b22;
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #00583288;
+    background-color: #017d47;
+}
+
+.active {
+    background-color: rgb(8, 206, 8);
+}
+
+.food {
+    background-color: red;
+}
+
+#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: max-content;
+    background-color: rgb(208, 255, 119);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#button {
+    width: max-content;
+    height: max-content;
+    margin: 15px;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#score {
+    position: absolute;
+    right: 80%;
+    height: max-content;
+    width: max-content;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    font-size: 30px;
+    top: 20%;
+    border: 5px solid #003b22;
+    padding: 15px;
+}
+
+#comment {
+    font-size: 40px;
+    text-align: center;
+    margin: 15px;
+    font-weight: 1000;
+    font-family: Helvetica, sans-serif;
+    color: #003b22;
+}
